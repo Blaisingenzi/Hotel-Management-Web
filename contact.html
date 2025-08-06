@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Luxury Hotel Rwanda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>LUXURY HOTEL RWANDA</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
+                    <li><a href="booking.php">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin_login.php">Admin</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Contact Us</h1>
+                    <p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-sidebar">
+                        <div class="contact-info-card">
+                            <h3>Get in Touch</h3>
+                            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                            
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="contact-icon">📍</div>
+                                    <div class="contact-text">
+                                        <h4>Address</h4>
+                                        <p>Kigali, Rwanda<br>Central Business District</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">📞</div>
+                                    <div class="contact-text">
+                                        <h4>Phone</h4>
+                                        <p>+250 788 123 456<br>+250 788 123 457</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">📧</div>
+                                    <div class="contact-text">
+                                        <h4>Email</h4>
+                                        <p>info@luxuryhotelrwanda.com<br>reservations@luxuryhotelrwanda.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">🕒</div>
+                                    <div class="contact-text">
+                                        <h4>Hours</h4>
+                                        <p>24/7 Front Desk<br>Reservations: 7:00 AM - 10:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="contact-form-card">
+                            <h2>Send us a Message</h2>
+                            <form id="contactForm" action="submit_contact.php" method="POST" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Full Name *</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject *</label>
+                                        <select id="subject" name="subject" required>
+                                            <option value="">Select a subject</option>
+                                            <option value="General Inquiry">General Inquiry</option>
+                                            <option value="Reservation Question">Reservation Question</option>
+                                            <option value="Room Availability">Room Availability</option>
+                                            <option value="Special Requests">Special Requests</option>
+                                            <option value="Feedback">Feedback</option>
+                                            <option value="Complaint">Complaint</option>
+                                            <option value="Partnership">Partnership</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="6" required placeholder="Please tell us how we can help you..."></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <span class="checkmark"></span>
+                                        Subscribe to our newsletter for special offers and updates
+                                    </label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="privacy" name="privacy" required>
+                                        <span class="checkmark"></span>
+                                        I agree to the <a href="terms.html" target="_blank">Terms & Conditions</a> and <a href="#" target="_blank">Privacy Policy</a>
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn-submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-container">
+                    <h2>Find Us</h2>
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <div class="map-icon">🗺️</div>
+                            <h3>Interactive Map</h3>
+                            <p>Our hotel is located in the heart of Kigali, Rwanda's vibrant capital city.</p>
+                            <div class="map-details">
+                                <p><strong>Address:</strong> Kigali, Rwanda</p>
+                                <p><strong>Nearest Airport:</strong> Kigali International Airport (KGL)</p>
+                                <p><strong>Distance from Airport:</strong> Approximately 10 km</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luxury Hotel Rwanda</h3>
+                    <p>Experience the finest hospitality in the heart of Rwanda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="rooms.php">Rooms</a></li>
+                        <li><a href="booking.php">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cancellation.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: +250 788 123 456</p>
+                    <p>Email: info@luxuryhotelrwanda.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luxury Hotel Rwanda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            const privacy = document.getElementById('privacy').checked;
+            
+            let isValid = true;
+            let errorMessage = '';
+            
+            // Clear previous error messages
+            clearErrors();
+            
+            // Validate name
+            if (name.length < 2) {
+                showError('name', 'Name must be at least 2 characters long');
+                isValid = false;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showError('email', 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            // Validate subject
+            if (!subject) {
+                showError('subject', 'Please select a subject');
+                isValid = false;
+            }
+            
+            // Validate message
+            if (message.length < 10) {
+                showError('message', 'Message must be at least 10 characters long');
+                isValid = false;
+            }
+            
+            // Validate privacy checkbox
+            if (!privacy) {
+                showError('privacy', 'You must agree to the Terms & Conditions and Privacy Policy');
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Show success message
+            showSuccessMessage();
+        });
+        
+        function showError(fieldId, message) {
+            const field = document.getElementById(fieldId);
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            field.parentNode.appendChild(errorDiv);
+            field.classList.add('error-input');
+        }
+        
+        function clearErrors() {
+            // Remove all error messages
+            const errorMessages = document.querySelectorAll('.error-message');
+            errorMessages.forEach(error => error.remove());
+            
+            // Remove error styling
+            const errorInputs = document.querySelectorAll('.error-input');
+            errorInputs.forEach(input => input.classList.remove('error-input'));
+        }
+        
+        function showSuccessMessage() {
+            // This would typically show a success message after form submission
+            // For now, we'll just log to console
+            console.log('Form submitted successfully!');
+        }
+    </script>
+</body>
+</html> 
